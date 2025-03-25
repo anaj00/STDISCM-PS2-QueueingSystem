@@ -94,7 +94,22 @@ build CMakeFiles/Code.dir/DungeonManager.cpp.obj: CXX_COMPILER__Code_scanned_Deb
   OBJECT_FILE_DIR = CMakeFiles\Code.dir
   dyndep = CMakeFiles/Code.dir/CXX.dd
 
-build CMakeFiles/Code.dir/CXX.dd | E$:/OneDrive/OneDrive$ -$ De$ La$ Salle$ University$ -$ Manila/001$ Year$ 4$ Term$ 2/STDISCM/Problem$ Sets/Problem$ Set$ 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json CMakeFiles/Code.dir/main.cpp.obj.modmap CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap: CXX_DYNDEP__Code_Debug CMakeFiles/Code.dir/main.cpp.obj.ddi CMakeFiles/Code.dir/DungeonInstance.cpp.obj.ddi CMakeFiles/Code.dir/DungeonManager.cpp.obj.ddi | E$:/OneDrive/OneDrive$ -$ De$ La$ Salle$ University$ -$ Manila/001$ Year$ 4$ Term$ 2/STDISCM/Problem$ Sets/Problem$ Set$ 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXDependInfo.json
+build CMakeFiles/Code.dir/ConsoleManager.cpp.obj.ddi: CXX_SCAN__Code_Debug E$:/OneDrive/OneDrive$ -$ De$ La$ Salle$ University$ -$ Manila/001$ Year$ 4$ Term$ 2/STDISCM/Problem$ Sets/Problem$ Set$ 2/Code/ConsoleManager.cpp || cmake_object_order_depends_target_Code
+  DEP_FILE = CMakeFiles\Code.dir\ConsoleManager.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\Code.dir\ConsoleManager.cpp.obj.ddi
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJ_FILE = CMakeFiles\Code.dir\ConsoleManager.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\Code.dir\ConsoleManager.cpp.obj.ddi.i
+
+build CMakeFiles/Code.dir/ConsoleManager.cpp.obj: CXX_COMPILER__Code_scanned_Debug E$:/OneDrive/OneDrive$ -$ De$ La$ Salle$ University$ -$ Manila/001$ Year$ 4$ Term$ 2/STDISCM/Problem$ Sets/Problem$ Set$ 2/Code/ConsoleManager.cpp | CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap || cmake_object_order_depends_target_Code CMakeFiles/Code.dir/CXX.dd
+  DEP_FILE = CMakeFiles\Code.dir\ConsoleManager.cpp.obj.d
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\Code.dir\ConsoleManager.cpp.obj.modmap
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Code.dir
+  OBJECT_FILE_DIR = CMakeFiles\Code.dir
+  dyndep = CMakeFiles/Code.dir/CXX.dd
+
+build CMakeFiles/Code.dir/CXX.dd | E$:/OneDrive/OneDrive$ -$ De$ La$ Salle$ University$ -$ Manila/001$ Year$ 4$ Term$ 2/STDISCM/Problem$ Sets/Problem$ Set$ 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json CMakeFiles/Code.dir/main.cpp.obj.modmap CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap: CXX_DYNDEP__Code_Debug CMakeFiles/Code.dir/main.cpp.obj.ddi CMakeFiles/Code.dir/DungeonInstance.cpp.obj.ddi CMakeFiles/Code.dir/DungeonManager.cpp.obj.ddi CMakeFiles/Code.dir/ConsoleManager.cpp.obj.ddi | E$:/OneDrive/OneDrive$ -$ De$ La$ Salle$ University$ -$ Manila/001$ Year$ 4$ Term$ 2/STDISCM/Problem$ Sets/Problem$ Set$ 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXDependInfo.json
 
 
 # =============================================================================
@@ -104,7 +119,7 @@ build CMakeFiles/Code.dir/CXX.dd | E$:/OneDrive/OneDrive$ -$ De$ La$ Salle$ Univ
 #############################################
 # Link the executable Code.exe
 
-build Code.exe: CXX_EXECUTABLE_LINKER__Code_Debug CMakeFiles/Code.dir/main.cpp.obj CMakeFiles/Code.dir/DungeonInstance.cpp.obj CMakeFiles/Code.dir/DungeonManager.cpp.obj
+build Code.exe: CXX_EXECUTABLE_LINKER__Code_Debug CMakeFiles/Code.dir/main.cpp.obj CMakeFiles/Code.dir/DungeonInstance.cpp.obj CMakeFiles/Code.dir/DungeonManager.cpp.obj CMakeFiles/Code.dir/ConsoleManager.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Code.dir

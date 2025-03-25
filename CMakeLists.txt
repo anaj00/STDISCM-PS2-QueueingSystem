@@ -7,4 +7,7 @@ add_executable(Code main.cpp
         DungeonInstance.cpp
         DungeonInstance.h
         DungeonManager.cpp
-        DungeonManager.h)
+        DungeonManager.h
+        ConsoleManager.cpp
+        ConsoleManager.h
+)

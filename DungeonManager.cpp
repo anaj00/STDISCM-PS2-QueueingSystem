@@ -4,16 +4,13 @@
 
 #include "DungeonManager.h"
 
-#include <iostream>
 
-DungeonManager::DungeonManager(int n, int n_tanks, int n_healers, int n_dps, int minTime, int maxTime)
-    : maxInstance(n), tanks(n_tanks), healers(n_healers), dps(n_dps), t1(minTime), t2(maxTime), instanceSemaphore(n)
-{
-    for (int i = 0; i < n; i++)
+
+DungeonManager::DungeonManager() : instanceSemaphore(maxInstance) {
+    for (int i = 0; i < maxInstance; i++)
     {
         instances.emplace_back(i+1);
     }
-    queuePlayers();
 }
 
 void DungeonManager::queuePlayers()
@@ -67,6 +64,22 @@ void DungeonManager::displaySummary() {
                   << "] Parties Served: " << instance.getPartiesServed() << "\n";
     }
     std::cout << "Total Parties Served: " << totalParties << "\n";
+}
+
+void DungeonManager::displayInitialization()
+{
+    std::cout << "Enter max concurrent dungeon instances: ";
+    std::cin >> maxInstance;
+    std::cout << "Enter number of tanks in queue: ";
+    std::cin >> tanks;
+    std::cout << "Enter number of healers in queue: ";
+    std::cin >> healers;
+    std::cout << "Enter number of DPS in queue: ";
+    std::cin >> dps;
+    std::cout << "Enter min dungeon time (t1): ";
+    std::cin >> t1;
+    std::cout << "Enter max dungeon time (t2): ";
+    std::cin >> t2;
 }
 
 DungeonManager::~DungeonManager() {

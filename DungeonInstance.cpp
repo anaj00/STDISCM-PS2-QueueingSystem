@@ -4,10 +4,6 @@
 
 #include "DungeonInstance.h"
 
-#include <iostream>
-#include <thread>
-#include <bits/random.h>
-
 std::mutex DungeonInstance::instanceMutex;
 
 DungeonInstance::DungeonInstance(int instanceID): id(instanceID), active(false), partiesServed(0), duration(0)

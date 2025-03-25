@@ -5,6 +5,9 @@
 #ifndef DUNGEONINSTANCE_H
 #define DUNGEONINSTANCE_H
 #include <mutex>
+#include <iostream>
+#include <thread>
+#include <random>
 
 
 class DungeonInstance {

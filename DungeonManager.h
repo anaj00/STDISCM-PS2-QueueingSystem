@@ -7,6 +7,7 @@
 #include <condition_variable>
 #include <queue>
 #include <thread>
+#include <iostream>
 
 #include "DungeonInstance.h"
 
@@ -26,10 +27,11 @@ private:
     std::counting_semaphore<> instanceSemaphore;
 
 public:
-    DungeonManager(int n, int n_tanks, int n_healers, int n_dps, int minTime, int maxTime);
+    DungeonManager();
     void queuePlayers();
     void processQueue();
     void displaySummary();
+    void displayInitialization();
     ~DungeonManager();
 };
 

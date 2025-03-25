@@ -1,3 +1,9 @@
 ninja_dyndep_version = 1.0
 build CMakeFiles/Code.dir/main.cpp.obj: dyndep
 
+build CMakeFiles/Code.dir/DungeonInstance.cpp.obj: dyndep
+
+build CMakeFiles/Code.dir/DungeonManager.cpp.obj: dyndep
+
+build CMakeFiles/Code.dir/ConsoleManager.cpp.obj: dyndep
+
