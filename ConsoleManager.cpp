@@ -13,6 +13,7 @@ void ConsoleManager::run()
     displaySplashScreen();
 
     dungeonManager.displayInitialization();
+    dungeonManager.queuePlayers();
     std::thread queueThread(&DungeonManager::processQueue, &dungeonManager);
     queueThread.detach();
 
@@ -49,6 +50,7 @@ void ConsoleManager::handleCommand(std::string command) {
     else if (command == "status")
     {
         std::cout << "\n=== Status ===\n";
+        dungeonManager.displayStatus();
     }
 
     else {

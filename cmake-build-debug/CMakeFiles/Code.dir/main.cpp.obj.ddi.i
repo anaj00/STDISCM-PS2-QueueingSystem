@@ -81685,9 +81685,12 @@ namespace __detail
 # 51 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/random" 2 3
 # 11 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonInstance.h" 2
 
+# 1 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonInstance.h" 1
+# 13 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonInstance.h" 2
 
 
-# 13 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonInstance.h"
+
+# 15 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonInstance.h"
 class DungeonInstance {
 private:
     int id;
@@ -81702,28 +81705,32 @@ public:
     int getRandomTime(int t1, int t2);
     bool isActive();
     int getPartiesServed();
+    int getInstanceID();
+    void setActive(bool flag);
 };
 # 14 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonManager.h" 2
 
 
 class DungeonManager {
 private:
-    int maxInstance;
-    int tanks, healers, dps;
-    int t1, t2;
+    int maxInstance = 0;
+    int tanks = 0, healers = 0, dps = 0;
+    int t1 = 0, t2 = 0;
 
     std::queue<int> tankQueue, healerQueue, dpsQueue;
+
     std::vector<DungeonInstance> instances;
     std::vector<std::thread> instanceThreads;
 
     std::mutex queueMutex;
     std::condition_variable partyAvailable;
-    std::counting_semaphore<> instanceSemaphore;
+    std::counting_semaphore<> instanceSemaphore{0};
 
 public:
     DungeonManager();
     void queuePlayers();
     void processQueue();
+    void displayStatus();
     void displaySummary();
     void displayInitialization();
     void displaySettings();

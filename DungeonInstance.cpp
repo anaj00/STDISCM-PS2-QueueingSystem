@@ -48,4 +48,12 @@ int DungeonInstance::getPartiesServed() {
     return partiesServed;
 }
 
+int DungeonInstance::getInstanceID()
+{
+    return id;
+}
 
+void DungeonInstance::setActive(bool flag)
+{
+    active = flag;
+}

@@ -15,22 +15,24 @@
 
 class DungeonManager {
 private:
-    int maxInstance;
-    int tanks, healers, dps;
-    int t1, t2;
+    int maxInstance = 0;
+    int tanks = 0, healers = 0, dps = 0;
+    int t1 = 0, t2 = 0;
 
     std::queue<int> tankQueue, healerQueue, dpsQueue;
+
     std::vector<DungeonInstance> instances;
     std::vector<std::thread> instanceThreads;
 
     std::mutex queueMutex;
     std::condition_variable partyAvailable;
-    std::counting_semaphore<> instanceSemaphore;
+    std::counting_semaphore<> instanceSemaphore{0};
 
 public:
     DungeonManager();
     void queuePlayers();
     void processQueue();
+    void displayStatus();
     void displaySummary();
     void displayInitialization();
     void displaySettings();

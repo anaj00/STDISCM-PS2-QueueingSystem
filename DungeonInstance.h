@@ -9,6 +9,8 @@
 #include <thread>
 #include <random>
 
+#include "DungeonInstance.h"
+
 
 class DungeonInstance {
 private:
@@ -24,6 +26,8 @@ public:
     int getRandomTime(int t1, int t2);
     bool isActive();
     int getPartiesServed();
+    int getInstanceID();
+    void setActive(bool flag);
 };
 
 #endif //DUNGEONINSTANCE_H

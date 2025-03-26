@@ -5,11 +5,7 @@
 #include "DungeonManager.h"
 #include "Utility.h"
 
-DungeonManager::DungeonManager() : instanceSemaphore(maxInstance) {
-    for (int i = 0; i < maxInstance; i++)
-    {
-        instances.emplace_back(i+1);
-    }
+DungeonManager::DungeonManager() : instanceSemaphore(0) {
 }
 
 void DungeonManager::queuePlayers()
@@ -31,6 +27,8 @@ void DungeonManager::processQueue() {
             return (tankQueue.size() > 0 && healerQueue.size() > 0 && dpsQueue.size() >= 3);
         });
 
+        std::cout << "[Debug] Party found! Forming a party...\n";
+
         // Form party
         tankQueue.pop();
         healerQueue.pop();
@@ -38,16 +36,47 @@ void DungeonManager::processQueue() {
         dpsQueue.pop();
         dpsQueue.pop();
 
-        lock.unlock();
+        lock.unlock();  // Unlock queue so more parties can form
 
-        instanceSemaphore.acquire(); // Wait for an available instance
+        std::cout << "[Debug] Waiting for available dungeon instance...\n";
+        instanceSemaphore.acquire();
 
+        std::cout << "[Debug] Dungeon slot available, looking for empty instance...\n";
+
+        // 🔹 Lock instance selection to prevent multiple threads from picking the same instance
+        std::lock_guard<std::mutex> instanceLock(queueMutex);
         for (DungeonInstance &instance : instances) {
             if (!instance.isActive()) {
+                instance.setActive(true);  // ✅ Mark instance as active **before** assigning it!
+                std::cout << "[Debug] Assigning party to Dungeon " << instance.getInstanceID() << "\n";
                 instanceThreads.emplace_back(&DungeonInstance::start, &instance, t1, t2);
                 break;
             }
         }
+
+        std::cout << "[Debug] Party processing completed, checking for next party...\n";
+    }
+}
+
+
+
+
+
+void DungeonManager::displayStatus()
+{
+    std::lock_guard<std::mutex> lock(queueMutex);
+
+    // Display queue status
+    std::cout << "\n=== Queue Status ===\n";
+    std::cout << "Tanks waiting: " << tankQueue.size() << std::endl;
+    std::cout << "Healers waiting: " << healerQueue.size() << std::endl;
+    std::cout << "DPS waiting: " << dpsQueue.size() << std::endl;
+
+    // Display dungeon instance status
+    std::cout << "\n=== Dungeon Instance Status ===\n";
+    for (auto &instance : instances) {
+        std::cout << "[Dungeon " << instance.getInstanceID() << "] Status: "
+                  << (instance.isActive() ? "Active" : "Empty") << std::endl;
     }
 }
 
@@ -81,6 +110,12 @@ void DungeonManager::displayInitialization()
     std::cout << "Enter max dungeon time (t2): ";
     std::cin >> t2;
 
+    instanceSemaphore.release(maxInstance);
+
+    for (int i = 0; i < maxInstance; i++) {
+        instances.emplace_back(i + 1);
+    }
+
     displaySettings();
     displayDivider();
 }
@@ -103,5 +138,3 @@ DungeonManager::~DungeonManager() {
         }
     }
 }
-
-
