@@ -10,4 +10,5 @@ add_executable(Code main.cpp
         DungeonManager.h
         ConsoleManager.cpp
         ConsoleManager.h
+        Utility.h
 )

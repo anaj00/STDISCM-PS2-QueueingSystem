@@ -9,6 +9,7 @@
 #include <thread>
 #include <iostream>
 
+
 #include "DungeonInstance.h"
 
 
@@ -32,6 +33,7 @@ public:
     void processQueue();
     void displaySummary();
     void displayInitialization();
+    void displaySettings();
     ~DungeonManager();
 };
 

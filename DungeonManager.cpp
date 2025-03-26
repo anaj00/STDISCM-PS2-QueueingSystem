@@ -3,8 +3,7 @@
 //
 
 #include "DungeonManager.h"
-
-
+#include "Utility.h"
 
 DungeonManager::DungeonManager() : instanceSemaphore(maxInstance) {
     for (int i = 0; i < maxInstance; i++)
@@ -68,6 +67,7 @@ void DungeonManager::displaySummary() {
 
 void DungeonManager::displayInitialization()
 {
+    std::cout << "\n=== Initialization ===\n";
     std::cout << "Enter max concurrent dungeon instances: ";
     std::cin >> maxInstance;
     std::cout << "Enter number of tanks in queue: ";
@@ -80,8 +80,22 @@ void DungeonManager::displayInitialization()
     std::cin >> t1;
     std::cout << "Enter max dungeon time (t2): ";
     std::cin >> t2;
+
+    displaySettings();
+    displayDivider();
 }
 
+void DungeonManager::displaySettings()
+{
+    std::cout << "\n=== Settings ===\n";
+    std::cout << "n = " << maxInstance << std::endl;
+    std::cout << "Tanks = " << tanks << std::endl;
+    std::cout << "Healers = " << healers << std::endl;
+    std::cout << "DPS = " << dps << std::endl;
+    std::cout << "Min time = " << t1 << std::endl;
+    std::cout << "Max time = " << t2 << std::endl;
+
+}
 DungeonManager::~DungeonManager() {
     for (auto &t : instanceThreads) {
         if (t.joinable()) {

@@ -42469,6 +42469,15 @@ namespace std
 
 # 1 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/ConsoleManager.h" 1
 # 9 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/ConsoleManager.h"
+# 1 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/Utility.h" 1
+# 11 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/Utility.h"
+
+# 11 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/Utility.h"
+inline void displayDivider()
+{
+    std::cout << "\n==============================================\n";
+}
+# 10 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/ConsoleManager.h" 2
 # 1 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonManager.h" 1
 
 
@@ -42519,6 +42528,8 @@ namespace std
 # 33 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/x86_64-w64-mingw32/include/stdint.h" 2 3 4
 
 
+
+# 35 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/x86_64-w64-mingw32/include/stdint.h" 3 4
 typedef signed char int8_t;
 typedef unsigned char uint8_t;
 typedef short int16_t;
@@ -65875,6 +65886,7 @@ namespace std
 # 10 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonManager.h" 2
 
 
+
 # 1 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonInstance.h" 1
 
 
@@ -81691,7 +81703,7 @@ public:
     bool isActive();
     int getPartiesServed();
 };
-# 13 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonManager.h" 2
+# 14 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonManager.h" 2
 
 
 class DungeonManager {
@@ -81714,20 +81726,21 @@ public:
     void processQueue();
     void displaySummary();
     void displayInitialization();
+    void displaySettings();
     ~DungeonManager();
 };
-# 10 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/ConsoleManager.h" 2
+# 11 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/ConsoleManager.h" 2
 
 
 class ConsoleManager {
-public:
-    void run();
-
 private:
     DungeonManager dungeonManager;
 
     void displaySplashScreen();
     void handleCommand(std::string command);
+
+public:
+    void run();
 
 };
 # 4 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/main.cpp" 2

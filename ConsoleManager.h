@@ -6,18 +6,19 @@
 #define CONSOLEMANAGER_H
 #include <string>
 
+#include "Utility.h"
 #include "DungeonManager.h"
 
 
 class ConsoleManager {
-public:
-    void run();
-
 private:
     DungeonManager dungeonManager;
 
     void displaySplashScreen();
     void handleCommand(std::string command);
+
+public:
+    void run();
 
 };
 
