@@ -3,12 +3,13 @@
 //
 
 #include "DungeonInstance.h"
+#include "DungeonManager.h"
 
 std::mutex DungeonInstance::instanceMutex;
 
-DungeonInstance::DungeonInstance(int instanceID): id(instanceID), active(false), partiesServed(0), duration(0)
+DungeonInstance::DungeonInstance(int instanceID, DungeonManager* manager)
+    : id(instanceID), active(false), partiesServed(0), duration(0), manager(manager)
 {
-
 }
 
 void DungeonInstance::start(int t1, int t2)
@@ -18,8 +19,8 @@ void DungeonInstance::start(int t1, int t2)
         active = true;
         partiesServed++;
         duration = getRandomTime(t1, t2);
-        std::cout << "[Dungeon " << id << "] Party entered, clearing in "
-                      << duration << " seconds.\n";
+        // std::cout << "[Dungeon " << id << "] Party entered, clearing in "
+        //               << duration << " seconds.\n";
     }
 
     std::this_thread::sleep_for(std::chrono::seconds(duration));
@@ -29,6 +30,8 @@ void DungeonInstance::start(int t1, int t2)
         active = false;
         std::cout << "[Dungeon " << id << "] Party finished.\n";
     }
+
+    manager->notifyInstanceAvailable();
 }
 
 int DungeonInstance::getRandomTime(int t1, int t2)

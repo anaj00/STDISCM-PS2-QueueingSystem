@@ -9,8 +9,9 @@
 #include <thread>
 #include <random>
 
-#include "DungeonInstance.h"
+// #include "DungeonManager.h"
 
+class DungeonManager;
 
 class DungeonInstance {
 private:
@@ -19,9 +20,10 @@ private:
     bool active;
     int partiesServed;
     static std::mutex instanceMutex;
+    DungeonManager* manager; // Reference to DungeonManager
 
 public:
-    DungeonInstance(int instanceID);
+    DungeonInstance(int instanceID, DungeonManager* manager);
     void start(int t1, int t2);
     int getRandomTime(int t1, int t2);
     bool isActive();

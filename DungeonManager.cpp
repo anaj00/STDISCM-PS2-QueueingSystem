@@ -3,7 +3,7 @@
 //
 
 #include "DungeonManager.h"
-#include "Utility.h"
+
 
 DungeonManager::DungeonManager() : instanceSemaphore(0) {
 }
@@ -15,52 +15,55 @@ void DungeonManager::queuePlayers()
     for (int i = 0; i < tanks; i++) tankQueue.push(i);
     for (int i = 0; i < healers; i++) healerQueue.push(i);
     for (int i = 0; i < dps; i++) dpsQueue.push(i);
-
-    std::cout << "[Queue] Players added. Matching parties...\n";
-    partyAvailable.notify_all();
 }
 
 void DungeonManager::processQueue() {
     while (true) {
+        // Lock only for checking party availability
         std::unique_lock<std::mutex> lock(queueMutex);
         partyAvailable.wait(lock, [this]() {
             return (tankQueue.size() > 0 && healerQueue.size() > 0 && dpsQueue.size() >= 3);
         });
 
-        std::cout << "[Debug] Party found! Forming a party...\n";
-
-        // Form party
+        // Form party (still within lock)
         tankQueue.pop();
         healerQueue.pop();
         dpsQueue.pop();
         dpsQueue.pop();
         dpsQueue.pop();
 
-        lock.unlock();  // Unlock queue so more parties can form
+        lock.unlock(); // Unlock queue mutex as soon as party is formed.
 
-        std::cout << "[Debug] Waiting for available dungeon instance...\n";
-        instanceSemaphore.acquire();
-
-        std::cout << "[Debug] Dungeon slot available, looking for empty instance...\n";
-
-        // 🔹 Lock instance selection to prevent multiple threads from picking the same instance
-        std::lock_guard<std::mutex> instanceLock(queueMutex);
+        // Lock for instance availability check
+        std::unique_lock<std::mutex> instanceLock(queueMutex);
+        // Recheck instance availability in a loop
+        while (true) {
+            bool instanceFound = false;
+            for (DungeonInstance &instance : instances) {
+                if (!instance.isActive()) {
+                    instanceFound = true;
+                    break;
+                }
+            }
+            if (instanceFound) break; //exit inner while loop.
+            instanceAvailable.wait(instanceLock);
+        }
+        //assign instance.
         for (DungeonInstance &instance : instances) {
             if (!instance.isActive()) {
-                instance.setActive(true);  // ✅ Mark instance as active **before** assigning it!
-                std::cout << "[Debug] Assigning party to Dungeon " << instance.getInstanceID() << "\n";
+                instance.setActive(true);
+                instanceLock.unlock();
                 instanceThreads.emplace_back(&DungeonInstance::start, &instance, t1, t2);
                 break;
             }
         }
-
-        std::cout << "[Debug] Party processing completed, checking for next party...\n";
     }
 }
 
-
-
-
+void DungeonManager::notifyInstanceAvailable() {
+    std::lock_guard<std::mutex> lock(queueMutex);
+    instanceAvailable.notify_all();  // 🔹 Signal a free instance
+}
 
 void DungeonManager::displayStatus()
 {
@@ -113,7 +116,7 @@ void DungeonManager::displayInitialization()
     instanceSemaphore.release(maxInstance);
 
     for (int i = 0; i < maxInstance; i++) {
-        instances.emplace_back(i + 1);
+        instances.emplace_back(i + 1, this); // Pass 'this'
     }
 
     displaySettings();

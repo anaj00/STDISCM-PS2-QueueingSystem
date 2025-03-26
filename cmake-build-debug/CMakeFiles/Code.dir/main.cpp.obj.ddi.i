@@ -65886,7 +65886,6 @@ namespace std
 # 10 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonManager.h" 2
 
 
-
 # 1 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonInstance.h" 1
 
 
@@ -81685,12 +81684,12 @@ namespace __detail
 # 51 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/random" 2 3
 # 11 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonInstance.h" 2
 
-# 1 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonInstance.h" 1
-# 13 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonInstance.h" 2
 
 
 
-# 15 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonInstance.h"
+# 14 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonInstance.h"
+class DungeonManager;
+
 class DungeonInstance {
 private:
     int id;
@@ -81698,9 +81697,10 @@ private:
     bool active;
     int partiesServed;
     static std::mutex instanceMutex;
+    DungeonManager* manager;
 
 public:
-    DungeonInstance(int instanceID);
+    DungeonInstance(int instanceID, DungeonManager* manager);
     void start(int t1, int t2);
     int getRandomTime(int t1, int t2);
     bool isActive();
@@ -81708,8 +81708,7 @@ public:
     int getInstanceID();
     void setActive(bool flag);
 };
-# 14 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonManager.h" 2
-
+# 13 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonManager.h" 2
 
 class DungeonManager {
 private:
@@ -81724,12 +81723,14 @@ private:
 
     std::mutex queueMutex;
     std::condition_variable partyAvailable;
+    std::condition_variable instanceAvailable;
     std::counting_semaphore<> instanceSemaphore{0};
 
 public:
     DungeonManager();
     void queuePlayers();
     void processQueue();
+    void notifyInstanceAvailable();
     void displayStatus();
     void displaySummary();
     void displayInitialization();

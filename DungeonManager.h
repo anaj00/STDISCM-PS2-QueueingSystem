@@ -7,11 +7,9 @@
 #include <condition_variable>
 #include <queue>
 #include <thread>
-#include <iostream>
 
-
+#include "Utility.h"
 #include "DungeonInstance.h"
-
 
 class DungeonManager {
 private:
@@ -26,12 +24,14 @@ private:
 
     std::mutex queueMutex;
     std::condition_variable partyAvailable;
+    std::condition_variable instanceAvailable;
     std::counting_semaphore<> instanceSemaphore{0};
 
 public:
     DungeonManager();
     void queuePlayers();
     void processQueue();
+    void notifyInstanceAvailable();
     void displayStatus();
     void displaySummary();
     void displayInitialization();
