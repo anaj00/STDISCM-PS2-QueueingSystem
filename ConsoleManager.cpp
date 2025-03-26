@@ -37,9 +37,17 @@ void ConsoleManager::handleCommand(std::string command) {
 
     if (command == "exit") {
         dungeonManager.displaySummary();
-        std::cout << "Exiting the program..." << std::endl;
-        exit(0);
-        std::terminate();
+
+        std::string confirmation;
+        std::cout << "Are you sure you want to exit? (y/n): ";
+        std::getline(std::cin, confirmation);
+
+        if (confirmation == "yes" || confirmation == "y") {
+            std::cout << "Exiting the program..." << std::endl;
+            exit(0);
+        } else {
+            std::cout << "Exit canceled. Returning to main menu..." << std::endl;
+        }
 
     } else if (command == "help") {
         std::cout << "\n=== Commands ===\n";
