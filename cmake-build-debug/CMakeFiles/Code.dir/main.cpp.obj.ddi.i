@@ -42470,658 +42470,7 @@ namespace std
 # 1 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/ConsoleManager.h" 1
 # 9 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/ConsoleManager.h"
 # 1 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/Utility.h" 1
-# 11 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/Utility.h"
-
-# 11 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/Utility.h"
-inline void displayDivider()
-{
-    std::cout << "\n==============================================\n";
-}
-# 10 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/ConsoleManager.h" 2
-# 1 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonManager.h" 1
-
-
-
-
-
-
-# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/condition_variable" 1 3
-# 32 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/condition_variable" 3
-       
-# 33 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/condition_variable" 3
-
-
-
-
-
-
-
-# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/chrono.h" 1 3
-# 33 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/chrono.h" 3
-       
-# 34 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/chrono.h" 3
-
-
-
-# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 1 3
-# 33 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
-       
-# 34 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
-
-
-
-
-
-
-# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/cstdint" 1 3
-# 32 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/cstdint" 3
-       
-# 33 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/cstdint" 3
-# 45 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/cstdint" 3
-# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h" 1 3 4
-# 9 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h" 3 4
-# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/x86_64-w64-mingw32/include/stdint.h" 1 3 4
-# 32 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/x86_64-w64-mingw32/include/stdint.h" 3 4
-# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h" 1 3 4
-# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/x86_64-w64-mingw32/include/stddef.h" 1 3 4
-# 2 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h" 2 3 4
-# 33 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/x86_64-w64-mingw32/include/stdint.h" 2 3 4
-
-
-
-# 35 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/x86_64-w64-mingw32/include/stdint.h" 3 4
-typedef signed char int8_t;
-typedef unsigned char uint8_t;
-typedef short int16_t;
-typedef unsigned short uint16_t;
-typedef int int32_t;
-typedef unsigned uint32_t;
-__extension__ typedef long long int64_t;
-__extension__ typedef unsigned long long uint64_t;
-
-
-typedef signed char int_least8_t;
-typedef unsigned char uint_least8_t;
-typedef short int_least16_t;
-typedef unsigned short uint_least16_t;
-typedef int int_least32_t;
-typedef unsigned uint_least32_t;
-__extension__ typedef long long int_least64_t;
-__extension__ typedef unsigned long long uint_least64_t;
-
-
-
-
-
-typedef signed char int_fast8_t;
-typedef unsigned char uint_fast8_t;
-typedef short int_fast16_t;
-typedef unsigned short uint_fast16_t;
-typedef int int_fast32_t;
-typedef unsigned int uint_fast32_t;
-__extension__ typedef long long int_fast64_t;
-__extension__ typedef unsigned long long uint_fast64_t;
-
-
-__extension__ typedef long long intmax_t;
-__extension__ typedef unsigned long long uintmax_t;
-# 10 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h" 2 3 4
-# 46 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/cstdint" 2 3
-
-
-namespace std
-{
-
-  using ::int8_t;
-  using ::int16_t;
-  using ::int32_t;
-  using ::int64_t;
-
-  using ::int_fast8_t;
-  using ::int_fast16_t;
-  using ::int_fast32_t;
-  using ::int_fast64_t;
-
-  using ::int_least8_t;
-  using ::int_least16_t;
-  using ::int_least32_t;
-  using ::int_least64_t;
-
-  using ::intmax_t;
-  using ::intptr_t;
-
-  using ::uint8_t;
-  using ::uint16_t;
-  using ::uint32_t;
-  using ::uint64_t;
-
-  using ::uint_fast8_t;
-  using ::uint_fast16_t;
-  using ::uint_fast32_t;
-  using ::uint_fast64_t;
-
-  using ::uint_least8_t;
-  using ::uint_least16_t;
-  using ::uint_least32_t;
-  using ::uint_least64_t;
-
-  using ::uintmax_t;
-  using ::uintptr_t;
-# 142 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/cstdint" 3
-}
-# 41 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 2 3
-
-
-# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/version.h" 1 3
-# 47 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/version.h" 3
-       
-# 48 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/version.h" 3
-# 44 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 2 3
-
-namespace std
-{
-
-# 59 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
-  template<intmax_t _Pn>
-    struct __static_sign
-    : integral_constant<intmax_t, (_Pn < 0) ? -1 : 1>
-    { };
-
-  template<intmax_t _Pn>
-    struct __static_abs
-    : integral_constant<intmax_t, _Pn * __static_sign<_Pn>::value>
-    { };
-
-  template<intmax_t _Pn, intmax_t _Qn>
-    struct __static_gcd
-    : __static_gcd<_Qn, (_Pn % _Qn)>
-    { };
-
-  template<intmax_t _Pn>
-    struct __static_gcd<_Pn, 0>
-    : integral_constant<intmax_t, __static_abs<_Pn>::value>
-    { };
-
-  template<intmax_t _Qn>
-    struct __static_gcd<0, _Qn>
-    : integral_constant<intmax_t, __static_abs<_Qn>::value>
-    { };
-
-
-
-
-
-
-
-  template<intmax_t _Pn, intmax_t _Qn>
-    struct __safe_multiply
-    {
-    private:
-      static const uintmax_t __c = uintmax_t(1) << (sizeof(intmax_t) * 4);
-
-      static const uintmax_t __a0 = __static_abs<_Pn>::value % __c;
-      static const uintmax_t __a1 = __static_abs<_Pn>::value / __c;
-      static const uintmax_t __b0 = __static_abs<_Qn>::value % __c;
-      static const uintmax_t __b1 = __static_abs<_Qn>::value / __c;
-
-      static_assert(__a1 == 0 || __b1 == 0,
-      "overflow in multiplication");
-      static_assert(__a0 * __b1 + __b0 * __a1 < (__c >> 1),
-      "overflow in multiplication");
-      static_assert(__b0 * __a0 <= 0x7fffffffffffffffLL,
-      "overflow in multiplication");
-      static_assert((__a0 * __b1 + __b0 * __a1) * __c
-      <= 0x7fffffffffffffffLL - __b0 * __a0,
-      "overflow in multiplication");
-
-    public:
-      static const intmax_t value = _Pn * _Qn;
-    };
-
-
-
-  template<uintmax_t __hi1, uintmax_t __lo1, uintmax_t __hi2, uintmax_t __lo2>
-    struct __big_less
-    : integral_constant<bool, (__hi1 < __hi2
-          || (__hi1 == __hi2 && __lo1 < __lo2))>
-    { };
-
-  template<uintmax_t __hi1, uintmax_t __lo1, uintmax_t __hi2, uintmax_t __lo2>
-    struct __big_add
-    {
-      static constexpr uintmax_t __lo = __lo1 + __lo2;
-      static constexpr uintmax_t __hi = (__hi1 + __hi2 +
-      (__lo1 + __lo2 < __lo1));
-    };
-
-
-  template<uintmax_t __hi1, uintmax_t __lo1, uintmax_t __hi2, uintmax_t __lo2>
-    struct __big_sub
-    {
-      static_assert(!__big_less<__hi1, __lo1, __hi2, __lo2>::value,
-      "Internal library error");
-      static constexpr uintmax_t __lo = __lo1 - __lo2;
-      static constexpr uintmax_t __hi = (__hi1 - __hi2 -
-      (__lo1 < __lo2));
-    };
-
-
-  template<uintmax_t __x, uintmax_t __y>
-    struct __big_mul
-    {
-    private:
-      static constexpr uintmax_t __c = uintmax_t(1) << (sizeof(intmax_t) * 4);
-      static constexpr uintmax_t __x0 = __x % __c;
-      static constexpr uintmax_t __x1 = __x / __c;
-      static constexpr uintmax_t __y0 = __y % __c;
-      static constexpr uintmax_t __y1 = __y / __c;
-      static constexpr uintmax_t __x0y0 = __x0 * __y0;
-      static constexpr uintmax_t __x0y1 = __x0 * __y1;
-      static constexpr uintmax_t __x1y0 = __x1 * __y0;
-      static constexpr uintmax_t __x1y1 = __x1 * __y1;
-      static constexpr uintmax_t __mix = __x0y1 + __x1y0;
-      static constexpr uintmax_t __mix_lo = __mix * __c;
-      static constexpr uintmax_t __mix_hi
-      = __mix / __c + ((__mix < __x0y1) ? __c : 0);
-      typedef __big_add<__mix_hi, __mix_lo, __x1y1, __x0y0> _Res;
-    public:
-      static constexpr uintmax_t __hi = _Res::__hi;
-      static constexpr uintmax_t __lo = _Res::__lo;
-    };
-
-
-
-  template<uintmax_t __n1, uintmax_t __n0, uintmax_t __d>
-    struct __big_div_impl
-    {
-    private:
-      static_assert(__d >= (uintmax_t(1) << (sizeof(intmax_t) * 8 - 1)),
-      "Internal library error");
-      static_assert(__n1 < __d, "Internal library error");
-      static constexpr uintmax_t __c = uintmax_t(1) << (sizeof(intmax_t) * 4);
-      static constexpr uintmax_t __d1 = __d / __c;
-      static constexpr uintmax_t __d0 = __d % __c;
-
-      static constexpr uintmax_t __q1x = __n1 / __d1;
-      static constexpr uintmax_t __r1x = __n1 % __d1;
-      static constexpr uintmax_t __m = __q1x * __d0;
-      static constexpr uintmax_t __r1y = __r1x * __c + __n0 / __c;
-      static constexpr uintmax_t __r1z = __r1y + __d;
-      static constexpr uintmax_t __r1
-      = ((__r1y < __m) ? ((__r1z >= __d) && (__r1z < __m))
-  ? (__r1z + __d) : __r1z : __r1y) - __m;
-      static constexpr uintmax_t __q1
-      = __q1x - ((__r1y < __m)
-   ? ((__r1z >= __d) && (__r1z < __m)) ? 2 : 1 : 0);
-      static constexpr uintmax_t __q0x = __r1 / __d1;
-      static constexpr uintmax_t __r0x = __r1 % __d1;
-      static constexpr uintmax_t __n = __q0x * __d0;
-      static constexpr uintmax_t __r0y = __r0x * __c + __n0 % __c;
-      static constexpr uintmax_t __r0z = __r0y + __d;
-      static constexpr uintmax_t __r0
-      = ((__r0y < __n) ? ((__r0z >= __d) && (__r0z < __n))
-  ? (__r0z + __d) : __r0z : __r0y) - __n;
-      static constexpr uintmax_t __q0
-      = __q0x - ((__r0y < __n) ? ((__r0z >= __d)
-      && (__r0z < __n)) ? 2 : 1 : 0);
-
-    public:
-      static constexpr uintmax_t __quot = __q1 * __c + __q0;
-      static constexpr uintmax_t __rem = __r0;
-
-    private:
-      typedef __big_mul<__quot, __d> _Prod;
-      typedef __big_add<_Prod::__hi, _Prod::__lo, 0, __rem> _Sum;
-      static_assert(_Sum::__hi == __n1 && _Sum::__lo == __n0,
-      "Internal library error");
-  };
-
-  template<uintmax_t __n1, uintmax_t __n0, uintmax_t __d>
-    struct __big_div
-    {
-    private:
-      static_assert(__d != 0, "Internal library error");
-      static_assert(sizeof (uintmax_t) == sizeof (unsigned long long),
-      "This library calls __builtin_clzll on uintmax_t, which "
-      "is unsafe on your platform. Please complain to "
-      "http://gcc.gnu.org/bugzilla/");
-      static constexpr int __shift = __builtin_clzll(__d);
-      static constexpr int __coshift_ = sizeof(uintmax_t) * 8 - __shift;
-      static constexpr int __coshift = (__shift != 0) ? __coshift_ : 0;
-      static constexpr uintmax_t __c1 = uintmax_t(1) << __shift;
-      static constexpr uintmax_t __c2 = uintmax_t(1) << __coshift;
-      static constexpr uintmax_t __new_d = __d * __c1;
-      static constexpr uintmax_t __new_n0 = __n0 * __c1;
-      static constexpr uintmax_t __n1_shifted = (__n1 % __d) * __c1;
-      static constexpr uintmax_t __n0_top = (__shift != 0) ? (__n0 / __c2) : 0;
-      static constexpr uintmax_t __new_n1 = __n1_shifted + __n0_top;
-      typedef __big_div_impl<__new_n1, __new_n0, __new_d> _Res;
-
-    public:
-      static constexpr uintmax_t __quot_hi = __n1 / __d;
-      static constexpr uintmax_t __quot_lo = _Res::__quot;
-      static constexpr uintmax_t __rem = _Res::__rem / __c1;
-
-    private:
-      typedef __big_mul<__quot_lo, __d> _P0;
-      typedef __big_mul<__quot_hi, __d> _P1;
-      typedef __big_add<_P0::__hi, _P0::__lo, _P1::__lo, __rem> _Sum;
-
-      static_assert(_P1::__hi == 0, "Internal library error");
-      static_assert(_Sum::__hi >= _P0::__hi, "Internal library error");
-
-      static_assert(_Sum::__hi == __n1 && _Sum::__lo == __n0,
-      "Internal library error");
-      static_assert(__rem < __d, "Internal library error");
-    };
-# 268 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
-  template<intmax_t _Num, intmax_t _Den = 1>
-    struct ratio
-    {
-      static_assert(_Den != 0, "denominator cannot be zero");
-      static_assert(_Num >= -0x7fffffffffffffffLL && _Den >= -0x7fffffffffffffffLL,
-      "out of range");
-
-
-      static constexpr intmax_t num =
-        _Num * __static_sign<_Den>::value / __static_gcd<_Num, _Den>::value;
-
-      static constexpr intmax_t den =
-        __static_abs<_Den>::value / __static_gcd<_Num, _Den>::value;
-
-      typedef ratio<num, den> type;
-    };
-# 295 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
-  template<typename _Tp>
-    struct __is_ratio
-    : std::false_type
-    { };
-
-  template<intmax_t _Num, intmax_t _Den>
-    struct __is_ratio<ratio<_Num, _Den>>
-    : std::true_type
-    { };
-
-
-  template<typename _Tp>
-    constexpr bool __is_ratio_v = false;
-  template<intmax_t _Num, intmax_t _Den>
-    constexpr bool __is_ratio_v<ratio<_Num, _Den>> = true;
-
-
-  template<typename _R1, typename _R2>
-    constexpr bool
-    __are_both_ratios() noexcept
-    {
-
-      if constexpr (__is_ratio_v<_R1>)
- if constexpr (__is_ratio_v<_R2>)
-   return true;
-      return false;
-
-
-
-    }
-
-  template<typename _R1, typename _R2>
-    struct __ratio_multiply
-    {
-      static_assert(std::__are_both_ratios<_R1, _R2>(),
-      "both template arguments must be a std::ratio");
-
-    private:
-      static const intmax_t __gcd1 =
-        __static_gcd<_R1::num, _R2::den>::value;
-      static const intmax_t __gcd2 =
-        __static_gcd<_R2::num, _R1::den>::value;
-
-    public:
-      typedef ratio<
-        __safe_multiply<(_R1::num / __gcd1),
-                        (_R2::num / __gcd2)>::value,
-        __safe_multiply<(_R1::den / __gcd2),
-                        (_R2::den / __gcd1)>::value> type;
-
-      static constexpr intmax_t num = type::num;
-      static constexpr intmax_t den = type::den;
-    };
-# 360 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
-  template<typename _R1, typename _R2>
-    using ratio_multiply = typename __ratio_multiply<_R1, _R2>::type;
-
-
-
-  template<typename _R1, typename _R2>
-    struct __ratio_divide
-    {
-      static_assert(_R2::num != 0, "division by 0");
-
-      typedef typename __ratio_multiply<
-        _R1,
-        ratio<_R2::den, _R2::num>>::type type;
-
-      static constexpr intmax_t num = type::num;
-      static constexpr intmax_t den = type::den;
-    };
-# 389 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
-  template<typename _R1, typename _R2>
-    using ratio_divide = typename __ratio_divide<_R1, _R2>::type;
-
-
-  template<typename _R1, typename _R2>
-    struct ratio_equal
-    : integral_constant<bool, _R1::num == _R2::num && _R1::den == _R2::den>
-    {
-      static_assert(std::__are_both_ratios<_R1, _R2>(),
-      "both template arguments must be a std::ratio");
-    };
-
-
-  template<typename _R1, typename _R2>
-    struct ratio_not_equal
-    : integral_constant<bool, !ratio_equal<_R1, _R2>::value>
-    { };
-
-
-
-
-  template<typename _R1, typename _R2,
-           typename _Left = __big_mul<_R1::num,_R2::den>,
-           typename _Right = __big_mul<_R2::num,_R1::den> >
-    struct __ratio_less_impl_1
-    : integral_constant<bool, __big_less<_Left::__hi, _Left::__lo,
-           _Right::__hi, _Right::__lo>::value>
-    { };
-
-  template<typename _R1, typename _R2,
-    bool = (_R1::num == 0 || _R2::num == 0
-     || (__static_sign<_R1::num>::value
-         != __static_sign<_R2::num>::value)),
-    bool = (__static_sign<_R1::num>::value == -1
-     && __static_sign<_R2::num>::value == -1)>
-    struct __ratio_less_impl
-    : __ratio_less_impl_1<_R1, _R2>::type
-    { };
-
-  template<typename _R1, typename _R2>
-    struct __ratio_less_impl<_R1, _R2, true, false>
-    : integral_constant<bool, _R1::num < _R2::num>
-    { };
-
-  template<typename _R1, typename _R2>
-    struct __ratio_less_impl<_R1, _R2, false, true>
-    : __ratio_less_impl_1<ratio<-_R2::num, _R2::den>,
-           ratio<-_R1::num, _R1::den> >::type
-    { };
-
-
-
-
-  template<typename _R1, typename _R2>
-    struct ratio_less
-    : __ratio_less_impl<_R1, _R2>::type
-    {
-      static_assert(std::__are_both_ratios<_R1, _R2>(),
-      "both template arguments must be a std::ratio");
-    };
-
-
-  template<typename _R1, typename _R2>
-    struct ratio_less_equal
-    : integral_constant<bool, !ratio_less<_R2, _R1>::value>
-    { };
-
-
-  template<typename _R1, typename _R2>
-    struct ratio_greater
-    : integral_constant<bool, ratio_less<_R2, _R1>::value>
-    { };
-
-
-  template<typename _R1, typename _R2>
-    struct ratio_greater_equal
-    : integral_constant<bool, !ratio_less<_R1, _R2>::value>
-    { };
-
-
-  template <typename _R1, typename _R2>
-    inline constexpr bool ratio_equal_v = ratio_equal<_R1, _R2>::value;
-  template <typename _R1, typename _R2>
-    inline constexpr bool ratio_not_equal_v = ratio_not_equal<_R1, _R2>::value;
-  template <typename _R1, typename _R2>
-    inline constexpr bool ratio_less_v = ratio_less<_R1, _R2>::value;
-  template <typename _R1, typename _R2>
-    inline constexpr bool ratio_less_equal_v
-      = ratio_less_equal<_R1, _R2>::value;
-  template <typename _R1, typename _R2>
-    inline constexpr bool ratio_greater_v = ratio_greater<_R1, _R2>::value;
-  template <typename _R1, typename _R2>
-    inline constexpr bool ratio_greater_equal_v
-      = ratio_greater_equal<_R1, _R2>::value;
-
-
-
-
-  template<typename _R1, typename _R2,
-      bool = (_R1::num >= 0),
-      bool = (_R2::num >= 0),
-      bool = ratio_less<ratio<__static_abs<_R1::num>::value, _R1::den>,
-        ratio<__static_abs<_R2::num>::value, _R2::den> >::value>
-    struct __ratio_add_impl
-    {
-    private:
-      typedef typename __ratio_add_impl<
-        ratio<-_R1::num, _R1::den>,
-        ratio<-_R2::num, _R2::den> >::type __t;
-    public:
-      typedef ratio<-__t::num, __t::den> type;
-    };
-
-
-  template<typename _R1, typename _R2, bool __b>
-    struct __ratio_add_impl<_R1, _R2, true, true, __b>
-    {
-    private:
-      static constexpr uintmax_t __g = __static_gcd<_R1::den, _R2::den>::value;
-      static constexpr uintmax_t __d2 = _R2::den / __g;
-      typedef __big_mul<_R1::den, __d2> __d;
-      typedef __big_mul<_R1::num, _R2::den / __g> __x;
-      typedef __big_mul<_R2::num, _R1::den / __g> __y;
-      typedef __big_add<__x::__hi, __x::__lo, __y::__hi, __y::__lo> __n;
-      static_assert(__n::__hi >= __x::__hi, "Internal library error");
-      typedef __big_div<__n::__hi, __n::__lo, __g> __ng;
-      static constexpr uintmax_t __g2 = __static_gcd<__ng::__rem, __g>::value;
-      typedef __big_div<__n::__hi, __n::__lo, __g2> __n_final;
-      static_assert(__n_final::__rem == 0, "Internal library error");
-      static_assert(__n_final::__quot_hi == 0 &&
-        __n_final::__quot_lo <= 0x7fffffffffffffffLL, "overflow in addition");
-      typedef __big_mul<_R1::den / __g2, __d2> __d_final;
-      static_assert(__d_final::__hi == 0 &&
-        __d_final::__lo <= 0x7fffffffffffffffLL, "overflow in addition");
-    public:
-      typedef ratio<__n_final::__quot_lo, __d_final::__lo> type;
-    };
-
-  template<typename _R1, typename _R2>
-    struct __ratio_add_impl<_R1, _R2, false, true, true>
-    : __ratio_add_impl<_R2, _R1>
-    { };
-
-
-  template<typename _R1, typename _R2>
-    struct __ratio_add_impl<_R1, _R2, true, false, false>
-    {
-    private:
-      static constexpr uintmax_t __g = __static_gcd<_R1::den, _R2::den>::value;
-      static constexpr uintmax_t __d2 = _R2::den / __g;
-      typedef __big_mul<_R1::den, __d2> __d;
-      typedef __big_mul<_R1::num, _R2::den / __g> __x;
-      typedef __big_mul<-_R2::num, _R1::den / __g> __y;
-      typedef __big_sub<__x::__hi, __x::__lo, __y::__hi, __y::__lo> __n;
-      typedef __big_div<__n::__hi, __n::__lo, __g> __ng;
-      static constexpr uintmax_t __g2 = __static_gcd<__ng::__rem, __g>::value;
-      typedef __big_div<__n::__hi, __n::__lo, __g2> __n_final;
-      static_assert(__n_final::__rem == 0, "Internal library error");
-      static_assert(__n_final::__quot_hi == 0 &&
-        __n_final::__quot_lo <= 0x7fffffffffffffffLL, "overflow in addition");
-      typedef __big_mul<_R1::den / __g2, __d2> __d_final;
-      static_assert(__d_final::__hi == 0 &&
-        __d_final::__lo <= 0x7fffffffffffffffLL, "overflow in addition");
-    public:
-      typedef ratio<__n_final::__quot_lo, __d_final::__lo> type;
-    };
-
-  template<typename _R1, typename _R2>
-    struct __ratio_add
-    {
-      static_assert(std::__are_both_ratios<_R1, _R2>(),
-      "both template arguments must be a std::ratio");
-
-      typedef typename __ratio_add_impl<_R1, _R2>::type type;
-      static constexpr intmax_t num = type::num;
-      static constexpr intmax_t den = type::den;
-    };
-# 578 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
-  template<typename _R1, typename _R2>
-    using ratio_add = typename __ratio_add<_R1, _R2>::type;
-
-
-
-  template<typename _R1, typename _R2>
-    struct __ratio_subtract
-    {
-      typedef typename __ratio_add<
-        _R1,
-        ratio<-_R2::num, _R2::den>>::type type;
-
-      static constexpr intmax_t num = type::num;
-      static constexpr intmax_t den = type::den;
-    };
-# 605 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
-  template<typename _R1, typename _R2>
-    using ratio_subtract = typename __ratio_subtract<_R1, _R2>::type;
-# 618 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
-  using atto = ratio< 1, 1000000000000000000>;
-  using femto = ratio< 1, 1000000000000000>;
-  using pico = ratio< 1, 1000000000000>;
-  using nano = ratio< 1, 1000000000>;
-  using micro = ratio< 1, 1000000>;
-  using milli = ratio< 1, 1000>;
-  using centi = ratio< 1, 100>;
-  using deci = ratio< 1, 10>;
-  using deca = ratio< 10, 1>;
-  using hecto = ratio< 100, 1>;
-  using kilo = ratio< 1000, 1>;
-  using mega = ratio< 1000000, 1>;
-  using giga = ratio< 1000000000, 1>;
-  using tera = ratio< 1000000000000, 1>;
-  using peta = ratio< 1000000000000000, 1>;
-  using exa = ratio< 1000000000000000000, 1>;
-# 646 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
-
-}
-# 38 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/chrono.h" 2 3
-
+# 9 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/Utility.h"
 # 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/limits" 1 3
 # 40 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/limits" 3
        
@@ -44761,7 +44110,680 @@ __extension__ template<> struct numeric_limits<_Float128> { static constexpr boo
 
 
 }
-# 40 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/chrono.h" 2 3
+# 10 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/Utility.h" 2
+
+
+
+# 12 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/Utility.h"
+inline void displayDivider()
+{
+    std::cout << "\n==============================================\n";
+}
+
+inline int getValidInput(const std::string& prompt) {
+    int value;
+    while (true) {
+        std::cout << prompt;
+        std::string input;
+        std::cin >> input;
+
+
+        if (input.find_first_not_of("0123456789") == std::string::npos) {
+            value = std::stoi(input);
+            if (value >= 0) return value;
+        }
+
+        std::cout << "Invalid input. Please enter a positive integer.\n";
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
+}
+# 10 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/ConsoleManager.h" 2
+# 1 "E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/DungeonManager.h" 1
+
+
+
+
+
+
+# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/condition_variable" 1 3
+# 32 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/condition_variable" 3
+       
+# 33 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/condition_variable" 3
+
+
+
+
+
+
+
+# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/chrono.h" 1 3
+# 33 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/chrono.h" 3
+       
+# 34 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/chrono.h" 3
+
+
+
+# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 1 3
+# 33 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
+       
+# 34 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
+
+
+
+
+
+
+# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/cstdint" 1 3
+# 32 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/cstdint" 3
+       
+# 33 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/cstdint" 3
+# 45 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/cstdint" 3
+# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h" 1 3 4
+# 9 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h" 3 4
+# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/x86_64-w64-mingw32/include/stdint.h" 1 3 4
+# 32 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/x86_64-w64-mingw32/include/stdint.h" 3 4
+# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h" 1 3 4
+# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/x86_64-w64-mingw32/include/stddef.h" 1 3 4
+# 2 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h" 2 3 4
+# 33 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/x86_64-w64-mingw32/include/stdint.h" 2 3 4
+
+
+
+# 35 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/x86_64-w64-mingw32/include/stdint.h" 3 4
+typedef signed char int8_t;
+typedef unsigned char uint8_t;
+typedef short int16_t;
+typedef unsigned short uint16_t;
+typedef int int32_t;
+typedef unsigned uint32_t;
+__extension__ typedef long long int64_t;
+__extension__ typedef unsigned long long uint64_t;
+
+
+typedef signed char int_least8_t;
+typedef unsigned char uint_least8_t;
+typedef short int_least16_t;
+typedef unsigned short uint_least16_t;
+typedef int int_least32_t;
+typedef unsigned uint_least32_t;
+__extension__ typedef long long int_least64_t;
+__extension__ typedef unsigned long long uint_least64_t;
+
+
+
+
+
+typedef signed char int_fast8_t;
+typedef unsigned char uint_fast8_t;
+typedef short int_fast16_t;
+typedef unsigned short uint_fast16_t;
+typedef int int_fast32_t;
+typedef unsigned int uint_fast32_t;
+__extension__ typedef long long int_fast64_t;
+__extension__ typedef unsigned long long uint_fast64_t;
+
+
+__extension__ typedef long long intmax_t;
+__extension__ typedef unsigned long long uintmax_t;
+# 10 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h" 2 3 4
+# 46 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/cstdint" 2 3
+
+
+namespace std
+{
+
+  using ::int8_t;
+  using ::int16_t;
+  using ::int32_t;
+  using ::int64_t;
+
+  using ::int_fast8_t;
+  using ::int_fast16_t;
+  using ::int_fast32_t;
+  using ::int_fast64_t;
+
+  using ::int_least8_t;
+  using ::int_least16_t;
+  using ::int_least32_t;
+  using ::int_least64_t;
+
+  using ::intmax_t;
+  using ::intptr_t;
+
+  using ::uint8_t;
+  using ::uint16_t;
+  using ::uint32_t;
+  using ::uint64_t;
+
+  using ::uint_fast8_t;
+  using ::uint_fast16_t;
+  using ::uint_fast32_t;
+  using ::uint_fast64_t;
+
+  using ::uint_least8_t;
+  using ::uint_least16_t;
+  using ::uint_least32_t;
+  using ::uint_least64_t;
+
+  using ::uintmax_t;
+  using ::uintptr_t;
+# 142 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/cstdint" 3
+}
+# 41 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 2 3
+
+
+# 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/version.h" 1 3
+# 47 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/version.h" 3
+       
+# 48 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/version.h" 3
+# 44 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 2 3
+
+namespace std
+{
+
+# 59 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
+  template<intmax_t _Pn>
+    struct __static_sign
+    : integral_constant<intmax_t, (_Pn < 0) ? -1 : 1>
+    { };
+
+  template<intmax_t _Pn>
+    struct __static_abs
+    : integral_constant<intmax_t, _Pn * __static_sign<_Pn>::value>
+    { };
+
+  template<intmax_t _Pn, intmax_t _Qn>
+    struct __static_gcd
+    : __static_gcd<_Qn, (_Pn % _Qn)>
+    { };
+
+  template<intmax_t _Pn>
+    struct __static_gcd<_Pn, 0>
+    : integral_constant<intmax_t, __static_abs<_Pn>::value>
+    { };
+
+  template<intmax_t _Qn>
+    struct __static_gcd<0, _Qn>
+    : integral_constant<intmax_t, __static_abs<_Qn>::value>
+    { };
+
+
+
+
+
+
+
+  template<intmax_t _Pn, intmax_t _Qn>
+    struct __safe_multiply
+    {
+    private:
+      static const uintmax_t __c = uintmax_t(1) << (sizeof(intmax_t) * 4);
+
+      static const uintmax_t __a0 = __static_abs<_Pn>::value % __c;
+      static const uintmax_t __a1 = __static_abs<_Pn>::value / __c;
+      static const uintmax_t __b0 = __static_abs<_Qn>::value % __c;
+      static const uintmax_t __b1 = __static_abs<_Qn>::value / __c;
+
+      static_assert(__a1 == 0 || __b1 == 0,
+      "overflow in multiplication");
+      static_assert(__a0 * __b1 + __b0 * __a1 < (__c >> 1),
+      "overflow in multiplication");
+      static_assert(__b0 * __a0 <= 0x7fffffffffffffffLL,
+      "overflow in multiplication");
+      static_assert((__a0 * __b1 + __b0 * __a1) * __c
+      <= 0x7fffffffffffffffLL - __b0 * __a0,
+      "overflow in multiplication");
+
+    public:
+      static const intmax_t value = _Pn * _Qn;
+    };
+
+
+
+  template<uintmax_t __hi1, uintmax_t __lo1, uintmax_t __hi2, uintmax_t __lo2>
+    struct __big_less
+    : integral_constant<bool, (__hi1 < __hi2
+          || (__hi1 == __hi2 && __lo1 < __lo2))>
+    { };
+
+  template<uintmax_t __hi1, uintmax_t __lo1, uintmax_t __hi2, uintmax_t __lo2>
+    struct __big_add
+    {
+      static constexpr uintmax_t __lo = __lo1 + __lo2;
+      static constexpr uintmax_t __hi = (__hi1 + __hi2 +
+      (__lo1 + __lo2 < __lo1));
+    };
+
+
+  template<uintmax_t __hi1, uintmax_t __lo1, uintmax_t __hi2, uintmax_t __lo2>
+    struct __big_sub
+    {
+      static_assert(!__big_less<__hi1, __lo1, __hi2, __lo2>::value,
+      "Internal library error");
+      static constexpr uintmax_t __lo = __lo1 - __lo2;
+      static constexpr uintmax_t __hi = (__hi1 - __hi2 -
+      (__lo1 < __lo2));
+    };
+
+
+  template<uintmax_t __x, uintmax_t __y>
+    struct __big_mul
+    {
+    private:
+      static constexpr uintmax_t __c = uintmax_t(1) << (sizeof(intmax_t) * 4);
+      static constexpr uintmax_t __x0 = __x % __c;
+      static constexpr uintmax_t __x1 = __x / __c;
+      static constexpr uintmax_t __y0 = __y % __c;
+      static constexpr uintmax_t __y1 = __y / __c;
+      static constexpr uintmax_t __x0y0 = __x0 * __y0;
+      static constexpr uintmax_t __x0y1 = __x0 * __y1;
+      static constexpr uintmax_t __x1y0 = __x1 * __y0;
+      static constexpr uintmax_t __x1y1 = __x1 * __y1;
+      static constexpr uintmax_t __mix = __x0y1 + __x1y0;
+      static constexpr uintmax_t __mix_lo = __mix * __c;
+      static constexpr uintmax_t __mix_hi
+      = __mix / __c + ((__mix < __x0y1) ? __c : 0);
+      typedef __big_add<__mix_hi, __mix_lo, __x1y1, __x0y0> _Res;
+    public:
+      static constexpr uintmax_t __hi = _Res::__hi;
+      static constexpr uintmax_t __lo = _Res::__lo;
+    };
+
+
+
+  template<uintmax_t __n1, uintmax_t __n0, uintmax_t __d>
+    struct __big_div_impl
+    {
+    private:
+      static_assert(__d >= (uintmax_t(1) << (sizeof(intmax_t) * 8 - 1)),
+      "Internal library error");
+      static_assert(__n1 < __d, "Internal library error");
+      static constexpr uintmax_t __c = uintmax_t(1) << (sizeof(intmax_t) * 4);
+      static constexpr uintmax_t __d1 = __d / __c;
+      static constexpr uintmax_t __d0 = __d % __c;
+
+      static constexpr uintmax_t __q1x = __n1 / __d1;
+      static constexpr uintmax_t __r1x = __n1 % __d1;
+      static constexpr uintmax_t __m = __q1x * __d0;
+      static constexpr uintmax_t __r1y = __r1x * __c + __n0 / __c;
+      static constexpr uintmax_t __r1z = __r1y + __d;
+      static constexpr uintmax_t __r1
+      = ((__r1y < __m) ? ((__r1z >= __d) && (__r1z < __m))
+  ? (__r1z + __d) : __r1z : __r1y) - __m;
+      static constexpr uintmax_t __q1
+      = __q1x - ((__r1y < __m)
+   ? ((__r1z >= __d) && (__r1z < __m)) ? 2 : 1 : 0);
+      static constexpr uintmax_t __q0x = __r1 / __d1;
+      static constexpr uintmax_t __r0x = __r1 % __d1;
+      static constexpr uintmax_t __n = __q0x * __d0;
+      static constexpr uintmax_t __r0y = __r0x * __c + __n0 % __c;
+      static constexpr uintmax_t __r0z = __r0y + __d;
+      static constexpr uintmax_t __r0
+      = ((__r0y < __n) ? ((__r0z >= __d) && (__r0z < __n))
+  ? (__r0z + __d) : __r0z : __r0y) - __n;
+      static constexpr uintmax_t __q0
+      = __q0x - ((__r0y < __n) ? ((__r0z >= __d)
+      && (__r0z < __n)) ? 2 : 1 : 0);
+
+    public:
+      static constexpr uintmax_t __quot = __q1 * __c + __q0;
+      static constexpr uintmax_t __rem = __r0;
+
+    private:
+      typedef __big_mul<__quot, __d> _Prod;
+      typedef __big_add<_Prod::__hi, _Prod::__lo, 0, __rem> _Sum;
+      static_assert(_Sum::__hi == __n1 && _Sum::__lo == __n0,
+      "Internal library error");
+  };
+
+  template<uintmax_t __n1, uintmax_t __n0, uintmax_t __d>
+    struct __big_div
+    {
+    private:
+      static_assert(__d != 0, "Internal library error");
+      static_assert(sizeof (uintmax_t) == sizeof (unsigned long long),
+      "This library calls __builtin_clzll on uintmax_t, which "
+      "is unsafe on your platform. Please complain to "
+      "http://gcc.gnu.org/bugzilla/");
+      static constexpr int __shift = __builtin_clzll(__d);
+      static constexpr int __coshift_ = sizeof(uintmax_t) * 8 - __shift;
+      static constexpr int __coshift = (__shift != 0) ? __coshift_ : 0;
+      static constexpr uintmax_t __c1 = uintmax_t(1) << __shift;
+      static constexpr uintmax_t __c2 = uintmax_t(1) << __coshift;
+      static constexpr uintmax_t __new_d = __d * __c1;
+      static constexpr uintmax_t __new_n0 = __n0 * __c1;
+      static constexpr uintmax_t __n1_shifted = (__n1 % __d) * __c1;
+      static constexpr uintmax_t __n0_top = (__shift != 0) ? (__n0 / __c2) : 0;
+      static constexpr uintmax_t __new_n1 = __n1_shifted + __n0_top;
+      typedef __big_div_impl<__new_n1, __new_n0, __new_d> _Res;
+
+    public:
+      static constexpr uintmax_t __quot_hi = __n1 / __d;
+      static constexpr uintmax_t __quot_lo = _Res::__quot;
+      static constexpr uintmax_t __rem = _Res::__rem / __c1;
+
+    private:
+      typedef __big_mul<__quot_lo, __d> _P0;
+      typedef __big_mul<__quot_hi, __d> _P1;
+      typedef __big_add<_P0::__hi, _P0::__lo, _P1::__lo, __rem> _Sum;
+
+      static_assert(_P1::__hi == 0, "Internal library error");
+      static_assert(_Sum::__hi >= _P0::__hi, "Internal library error");
+
+      static_assert(_Sum::__hi == __n1 && _Sum::__lo == __n0,
+      "Internal library error");
+      static_assert(__rem < __d, "Internal library error");
+    };
+# 268 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
+  template<intmax_t _Num, intmax_t _Den = 1>
+    struct ratio
+    {
+      static_assert(_Den != 0, "denominator cannot be zero");
+      static_assert(_Num >= -0x7fffffffffffffffLL && _Den >= -0x7fffffffffffffffLL,
+      "out of range");
+
+
+      static constexpr intmax_t num =
+        _Num * __static_sign<_Den>::value / __static_gcd<_Num, _Den>::value;
+
+      static constexpr intmax_t den =
+        __static_abs<_Den>::value / __static_gcd<_Num, _Den>::value;
+
+      typedef ratio<num, den> type;
+    };
+# 295 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
+  template<typename _Tp>
+    struct __is_ratio
+    : std::false_type
+    { };
+
+  template<intmax_t _Num, intmax_t _Den>
+    struct __is_ratio<ratio<_Num, _Den>>
+    : std::true_type
+    { };
+
+
+  template<typename _Tp>
+    constexpr bool __is_ratio_v = false;
+  template<intmax_t _Num, intmax_t _Den>
+    constexpr bool __is_ratio_v<ratio<_Num, _Den>> = true;
+
+
+  template<typename _R1, typename _R2>
+    constexpr bool
+    __are_both_ratios() noexcept
+    {
+
+      if constexpr (__is_ratio_v<_R1>)
+ if constexpr (__is_ratio_v<_R2>)
+   return true;
+      return false;
+
+
+
+    }
+
+  template<typename _R1, typename _R2>
+    struct __ratio_multiply
+    {
+      static_assert(std::__are_both_ratios<_R1, _R2>(),
+      "both template arguments must be a std::ratio");
+
+    private:
+      static const intmax_t __gcd1 =
+        __static_gcd<_R1::num, _R2::den>::value;
+      static const intmax_t __gcd2 =
+        __static_gcd<_R2::num, _R1::den>::value;
+
+    public:
+      typedef ratio<
+        __safe_multiply<(_R1::num / __gcd1),
+                        (_R2::num / __gcd2)>::value,
+        __safe_multiply<(_R1::den / __gcd2),
+                        (_R2::den / __gcd1)>::value> type;
+
+      static constexpr intmax_t num = type::num;
+      static constexpr intmax_t den = type::den;
+    };
+# 360 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
+  template<typename _R1, typename _R2>
+    using ratio_multiply = typename __ratio_multiply<_R1, _R2>::type;
+
+
+
+  template<typename _R1, typename _R2>
+    struct __ratio_divide
+    {
+      static_assert(_R2::num != 0, "division by 0");
+
+      typedef typename __ratio_multiply<
+        _R1,
+        ratio<_R2::den, _R2::num>>::type type;
+
+      static constexpr intmax_t num = type::num;
+      static constexpr intmax_t den = type::den;
+    };
+# 389 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
+  template<typename _R1, typename _R2>
+    using ratio_divide = typename __ratio_divide<_R1, _R2>::type;
+
+
+  template<typename _R1, typename _R2>
+    struct ratio_equal
+    : integral_constant<bool, _R1::num == _R2::num && _R1::den == _R2::den>
+    {
+      static_assert(std::__are_both_ratios<_R1, _R2>(),
+      "both template arguments must be a std::ratio");
+    };
+
+
+  template<typename _R1, typename _R2>
+    struct ratio_not_equal
+    : integral_constant<bool, !ratio_equal<_R1, _R2>::value>
+    { };
+
+
+
+
+  template<typename _R1, typename _R2,
+           typename _Left = __big_mul<_R1::num,_R2::den>,
+           typename _Right = __big_mul<_R2::num,_R1::den> >
+    struct __ratio_less_impl_1
+    : integral_constant<bool, __big_less<_Left::__hi, _Left::__lo,
+           _Right::__hi, _Right::__lo>::value>
+    { };
+
+  template<typename _R1, typename _R2,
+    bool = (_R1::num == 0 || _R2::num == 0
+     || (__static_sign<_R1::num>::value
+         != __static_sign<_R2::num>::value)),
+    bool = (__static_sign<_R1::num>::value == -1
+     && __static_sign<_R2::num>::value == -1)>
+    struct __ratio_less_impl
+    : __ratio_less_impl_1<_R1, _R2>::type
+    { };
+
+  template<typename _R1, typename _R2>
+    struct __ratio_less_impl<_R1, _R2, true, false>
+    : integral_constant<bool, _R1::num < _R2::num>
+    { };
+
+  template<typename _R1, typename _R2>
+    struct __ratio_less_impl<_R1, _R2, false, true>
+    : __ratio_less_impl_1<ratio<-_R2::num, _R2::den>,
+           ratio<-_R1::num, _R1::den> >::type
+    { };
+
+
+
+
+  template<typename _R1, typename _R2>
+    struct ratio_less
+    : __ratio_less_impl<_R1, _R2>::type
+    {
+      static_assert(std::__are_both_ratios<_R1, _R2>(),
+      "both template arguments must be a std::ratio");
+    };
+
+
+  template<typename _R1, typename _R2>
+    struct ratio_less_equal
+    : integral_constant<bool, !ratio_less<_R2, _R1>::value>
+    { };
+
+
+  template<typename _R1, typename _R2>
+    struct ratio_greater
+    : integral_constant<bool, ratio_less<_R2, _R1>::value>
+    { };
+
+
+  template<typename _R1, typename _R2>
+    struct ratio_greater_equal
+    : integral_constant<bool, !ratio_less<_R1, _R2>::value>
+    { };
+
+
+  template <typename _R1, typename _R2>
+    inline constexpr bool ratio_equal_v = ratio_equal<_R1, _R2>::value;
+  template <typename _R1, typename _R2>
+    inline constexpr bool ratio_not_equal_v = ratio_not_equal<_R1, _R2>::value;
+  template <typename _R1, typename _R2>
+    inline constexpr bool ratio_less_v = ratio_less<_R1, _R2>::value;
+  template <typename _R1, typename _R2>
+    inline constexpr bool ratio_less_equal_v
+      = ratio_less_equal<_R1, _R2>::value;
+  template <typename _R1, typename _R2>
+    inline constexpr bool ratio_greater_v = ratio_greater<_R1, _R2>::value;
+  template <typename _R1, typename _R2>
+    inline constexpr bool ratio_greater_equal_v
+      = ratio_greater_equal<_R1, _R2>::value;
+
+
+
+
+  template<typename _R1, typename _R2,
+      bool = (_R1::num >= 0),
+      bool = (_R2::num >= 0),
+      bool = ratio_less<ratio<__static_abs<_R1::num>::value, _R1::den>,
+        ratio<__static_abs<_R2::num>::value, _R2::den> >::value>
+    struct __ratio_add_impl
+    {
+    private:
+      typedef typename __ratio_add_impl<
+        ratio<-_R1::num, _R1::den>,
+        ratio<-_R2::num, _R2::den> >::type __t;
+    public:
+      typedef ratio<-__t::num, __t::den> type;
+    };
+
+
+  template<typename _R1, typename _R2, bool __b>
+    struct __ratio_add_impl<_R1, _R2, true, true, __b>
+    {
+    private:
+      static constexpr uintmax_t __g = __static_gcd<_R1::den, _R2::den>::value;
+      static constexpr uintmax_t __d2 = _R2::den / __g;
+      typedef __big_mul<_R1::den, __d2> __d;
+      typedef __big_mul<_R1::num, _R2::den / __g> __x;
+      typedef __big_mul<_R2::num, _R1::den / __g> __y;
+      typedef __big_add<__x::__hi, __x::__lo, __y::__hi, __y::__lo> __n;
+      static_assert(__n::__hi >= __x::__hi, "Internal library error");
+      typedef __big_div<__n::__hi, __n::__lo, __g> __ng;
+      static constexpr uintmax_t __g2 = __static_gcd<__ng::__rem, __g>::value;
+      typedef __big_div<__n::__hi, __n::__lo, __g2> __n_final;
+      static_assert(__n_final::__rem == 0, "Internal library error");
+      static_assert(__n_final::__quot_hi == 0 &&
+        __n_final::__quot_lo <= 0x7fffffffffffffffLL, "overflow in addition");
+      typedef __big_mul<_R1::den / __g2, __d2> __d_final;
+      static_assert(__d_final::__hi == 0 &&
+        __d_final::__lo <= 0x7fffffffffffffffLL, "overflow in addition");
+    public:
+      typedef ratio<__n_final::__quot_lo, __d_final::__lo> type;
+    };
+
+  template<typename _R1, typename _R2>
+    struct __ratio_add_impl<_R1, _R2, false, true, true>
+    : __ratio_add_impl<_R2, _R1>
+    { };
+
+
+  template<typename _R1, typename _R2>
+    struct __ratio_add_impl<_R1, _R2, true, false, false>
+    {
+    private:
+      static constexpr uintmax_t __g = __static_gcd<_R1::den, _R2::den>::value;
+      static constexpr uintmax_t __d2 = _R2::den / __g;
+      typedef __big_mul<_R1::den, __d2> __d;
+      typedef __big_mul<_R1::num, _R2::den / __g> __x;
+      typedef __big_mul<-_R2::num, _R1::den / __g> __y;
+      typedef __big_sub<__x::__hi, __x::__lo, __y::__hi, __y::__lo> __n;
+      typedef __big_div<__n::__hi, __n::__lo, __g> __ng;
+      static constexpr uintmax_t __g2 = __static_gcd<__ng::__rem, __g>::value;
+      typedef __big_div<__n::__hi, __n::__lo, __g2> __n_final;
+      static_assert(__n_final::__rem == 0, "Internal library error");
+      static_assert(__n_final::__quot_hi == 0 &&
+        __n_final::__quot_lo <= 0x7fffffffffffffffLL, "overflow in addition");
+      typedef __big_mul<_R1::den / __g2, __d2> __d_final;
+      static_assert(__d_final::__hi == 0 &&
+        __d_final::__lo <= 0x7fffffffffffffffLL, "overflow in addition");
+    public:
+      typedef ratio<__n_final::__quot_lo, __d_final::__lo> type;
+    };
+
+  template<typename _R1, typename _R2>
+    struct __ratio_add
+    {
+      static_assert(std::__are_both_ratios<_R1, _R2>(),
+      "both template arguments must be a std::ratio");
+
+      typedef typename __ratio_add_impl<_R1, _R2>::type type;
+      static constexpr intmax_t num = type::num;
+      static constexpr intmax_t den = type::den;
+    };
+# 578 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
+  template<typename _R1, typename _R2>
+    using ratio_add = typename __ratio_add<_R1, _R2>::type;
+
+
+
+  template<typename _R1, typename _R2>
+    struct __ratio_subtract
+    {
+      typedef typename __ratio_add<
+        _R1,
+        ratio<-_R2::num, _R2::den>>::type type;
+
+      static constexpr intmax_t num = type::num;
+      static constexpr intmax_t den = type::den;
+    };
+# 605 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
+  template<typename _R1, typename _R2>
+    using ratio_subtract = typename __ratio_subtract<_R1, _R2>::type;
+# 618 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
+  using atto = ratio< 1, 1000000000000000000>;
+  using femto = ratio< 1, 1000000000000000>;
+  using pico = ratio< 1, 1000000000000>;
+  using nano = ratio< 1, 1000000000>;
+  using micro = ratio< 1, 1000000>;
+  using milli = ratio< 1, 1000>;
+  using centi = ratio< 1, 100>;
+  using deci = ratio< 1, 10>;
+  using deca = ratio< 10, 1>;
+  using hecto = ratio< 100, 1>;
+  using kilo = ratio< 1000, 1>;
+  using mega = ratio< 1000000, 1>;
+  using giga = ratio< 1000000000, 1>;
+  using tera = ratio< 1000000000000, 1>;
+  using peta = ratio< 1000000000000000, 1>;
+  using exa = ratio< 1000000000000000000, 1>;
+# 646 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ratio" 3
+
+}
+# 38 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/bits/chrono.h" 2 3
+
+
 # 1 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ctime" 1 3
 # 39 "D:/Downloads/winlibs-x86_64-posix-seh-gcc-14.2.0-llvm-18.1.8-mingw-w64ucrt-12.0.0-r1/mingw64/include/c++/14.2.0/ctime" 3
        

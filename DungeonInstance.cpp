@@ -19,8 +19,8 @@ void DungeonInstance::start(int t1, int t2)
         active = true;
         partiesServed++;
         duration = getRandomTime(t1, t2);
-        // std::cout << "[Dungeon " << id << "] Party entered, clearing in "
-        //               << duration << " seconds.\n";
+        std::cout << "[Dungeon " << id << "] Party entered, clearing in "
+                      << duration << " seconds.\n";
     }
 
     std::this_thread::sleep_for(std::chrono::seconds(duration));

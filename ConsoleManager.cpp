@@ -39,7 +39,7 @@ void ConsoleManager::handleCommand(std::string command) {
         dungeonManager.displaySummary();
 
         std::string confirmation;
-        std::cout << "Are you sure you want to exit? (y/n): ";
+        std::cout << "\nAre you sure you want to exit? (y/n): ";
         std::getline(std::cin, confirmation);
 
         if (confirmation == "yes" || confirmation == "y") {

@@ -1,81 +1,65 @@
 # ninja log v6
-7	402	7647053223053230	CMakeFiles/Code.dir/main.cpp.obj.ddi	85af5b2b507cc9af
-7	426	7647056966066971	CMakeFiles/Code.dir/DungeonManager.cpp.obj.ddi	85c1c3c41f75c34a
-426	460	7647056970250023	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
-426	460	7647056970250023	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
-426	460	7647056970250023	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
-426	460	7647056970250023	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
-442	2396	7647053227401596	CMakeFiles/Code.dir/main.cpp.obj	6bab000b605f18c1
-7	326	7647054037921763	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.ddi	9539556aae2c9651
-450	2451	7647053227481386	CMakeFiles/Code.dir/ConsoleManager.cpp.obj	cc65fbb9c60f0b64
-2014	2303	7647056986137529	Code.exe	83f6c36841508de7
-426	460	7647056970250023	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
-463	2014	7647056970619037	CMakeFiles/Code.dir/DungeonManager.cpp.obj	b6a04c2bdbdcce67
-369	1499	7647054041542081	CMakeFiles/Code.dir/DungeonInstance.cpp.obj	a391b1d5013b08cd
-3	721	7646941112198015	build.ninja	2af3cafd7e70056b
-17	399	7647053223152957	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.ddi	3f1443978c301c1b
-426	460	7647056970250023	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
+14	415	7647728438106977	CMakeFiles/Code.dir/main.cpp.obj.ddi	85af5b2b507cc9af
+483	529	7647751169745750	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
+483	529	7647751169745750	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
+8	483	7647751165004676	CMakeFiles/Code.dir/DungeonManager.cpp.obj.ddi	85c1c3c41f75c34a
+483	529	7647751169745750	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
+483	529	7647751169745750	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
+471	2025	7647728442670020	CMakeFiles/Code.dir/main.cpp.obj	6bab000b605f18c1
+19	387	7647728438146879	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.ddi	9539556aae2c9651
+2958	3219	7647751194500899	Code.exe	83f6c36841508de7
+484	2238	7647728442799672	CMakeFiles/Code.dir/ConsoleManager.cpp.obj	cc65fbb9c60f0b64
+483	529	7647751169745750	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
+531	2957	7647751170235823	CMakeFiles/Code.dir/DungeonManager.cpp.obj	b6a04c2bdbdcce67
+474	2133	7647728442699935	CMakeFiles/Code.dir/DungeonInstance.cpp.obj	a391b1d5013b08cd
+3	721	7647720350069507	build.ninja	2af3cafd7e70056b
+26	387	7647728438226661	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.ddi	3f1443978c301c1b
+483	529	7647751169745750	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
 480	734	7646924955522444	CMakeFiles/Code.dir/Party.cpp.obj.ddi	6d7cc6d398cddf67
 463	500	7646937278158918	CMakeFiles/Code.dir/Party.cpp.obj.modmap	b1a3fd040d90d0f8
 420	1646	7646926116965238	CMakeFiles/Code.dir/Party.cpp.obj	bb215a911975c09a
-9	424	7647058007385292	CMakeFiles/Code.dir/DungeonManager.cpp.obj.ddi	85c1c3c41f75c34a
-424	461	7647058011537924	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
-424	461	7647058011537924	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
-424	461	7647058011537924	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
-424	461	7647058011537924	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
-424	461	7647058011537924	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
-424	461	7647058011537924	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
-463	1952	7647058011916604	CMakeFiles/Code.dir/DungeonManager.cpp.obj	b6a04c2bdbdcce67
-1953	2207	7647058026816761	Code.exe	83f6c36841508de7
-11	422	7647059365185083	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.ddi	9539556aae2c9651
-17	423	7647059365245171	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.ddi	3f1443978c301c1b
-7	447	7647059365140791	CMakeFiles/Code.dir/main.cpp.obj.ddi	85af5b2b507cc9af
-14	487	7647059365215004	CMakeFiles/Code.dir/DungeonManager.cpp.obj.ddi	85c1c3c41f75c34a
-487	522	7647059369942932	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
-487	522	7647059369942932	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
-487	522	7647059369942932	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
-487	522	7647059369942932	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
-487	522	7647059369942932	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
-487	522	7647059369942932	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
-19	452	7647062889774901	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.ddi	3f1443978c301c1b
-16	507	7647062889744981	CMakeFiles/Code.dir/DungeonManager.cpp.obj.ddi	85c1c3c41f75c34a
-9	513	7647062889675168	CMakeFiles/Code.dir/main.cpp.obj.ddi	85af5b2b507cc9af
-13	534	7647062889715063	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.ddi	9539556aae2c9651
-534	568	7647062894931465	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
-534	568	7647062894931465	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
-534	568	7647062894931465	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
-534	568	7647062894931465	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
-534	568	7647062894931465	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
-534	568	7647062894931465	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
-7	347	7647063448329257	CMakeFiles/Code.dir/main.cpp.obj.ddi	85af5b2b507cc9af
-17	375	7647063448428995	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.ddi	3f1443978c301c1b
-11	380	7647063448379122	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.ddi	9539556aae2c9651
-14	390	7647063448399071	CMakeFiles/Code.dir/DungeonManager.cpp.obj.ddi	85c1c3c41f75c34a
-391	423	7647063452168995	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
-391	423	7647063452168995	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
-391	423	7647063452168995	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
-391	423	7647063452168995	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
-391	423	7647063452168995	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
-391	423	7647063452168995	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
-7	341	7647065034083312	CMakeFiles/Code.dir/main.cpp.obj.ddi	85af5b2b507cc9af
-20	344	7647065034212958	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.ddi	3f1443978c301c1b
-14	347	7647065034153119	CMakeFiles/Code.dir/DungeonManager.cpp.obj.ddi	85c1c3c41f75c34a
-11	348	7647065034123201	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.ddi	9539556aae2c9651
-349	382	7647065037494182	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
-349	382	7647065037494182	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
-349	382	7647065037494182	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
-349	382	7647065037494182	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
-349	382	7647065037494182	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
-349	382	7647065037494182	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
-384	2136	7647065037843249	CMakeFiles/Code.dir/main.cpp.obj	6bab000b605f18c1
-392	2192	7647065037933013	CMakeFiles/Code.dir/ConsoleManager.cpp.obj	cc65fbb9c60f0b64
-389	2316	7647065037903096	CMakeFiles/Code.dir/DungeonManager.cpp.obj	b6a04c2bdbdcce67
-41	347	7647065237971243	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.ddi	9539556aae2c9651
-348	383	7647065241042745	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
-348	383	7647065241042745	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
-348	383	7647065241042745	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
-348	383	7647065241042745	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
-348	383	7647065241042745	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
-348	383	7647065241042745	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
-384	1826	7647065241411758	CMakeFiles/Code.dir/DungeonInstance.cpp.obj	a391b1d5013b08cd
-1827	3101	7647065255833196	Code.exe	83f6c36841508de7
+9	459	7647751704497840	CMakeFiles/Code.dir/DungeonManager.cpp.obj.ddi	85c1c3c41f75c34a
+459	579	7647751709007748	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
+459	579	7647751709007748	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
+459	579	7647751709007748	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
+459	579	7647751709007748	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
+459	579	7647751709007748	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
+459	579	7647751709007748	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
+580	2558	7647751710214522	CMakeFiles/Code.dir/DungeonManager.cpp.obj	b6a04c2bdbdcce67
+2559	2748	7647751729996338	Code.exe	83f6c36841508de7
+7	321	7647752593965678	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.ddi	3f1443978c301c1b
+321	363	7647752597099648	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
+321	363	7647752597099648	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
+321	363	7647752597099648	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
+321	363	7647752597099648	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
+321	363	7647752597099648	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
+321	363	7647752597099648	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
+364	1899	7647752597533575	CMakeFiles/Code.dir/ConsoleManager.cpp.obj	cc65fbb9c60f0b64
+1900	2108	7647752612889459	Code.exe	83f6c36841508de7
+8	340	7647754039053065	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.ddi	9539556aae2c9651
+340	381	7647754042384159	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
+340	381	7647754042384159	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
+340	381	7647754042384159	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
+340	381	7647754042384159	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
+340	381	7647754042384159	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
+340	381	7647754042384159	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
+382	1913	7647754042803035	CMakeFiles/Code.dir/DungeonInstance.cpp.obj	a391b1d5013b08cd
+1914	2104	7647754058112993	Code.exe	83f6c36841508de7
+7	386	7647754840247568	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.ddi	9539556aae2c9651
+387	418	7647754844048276	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
+387	418	7647754844048276	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
+387	418	7647754844048276	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
+387	418	7647754844048276	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
+387	418	7647754844048276	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
+387	418	7647754844048276	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
+420	1718	7647754844377399	CMakeFiles/Code.dir/DungeonInstance.cpp.obj	a391b1d5013b08cd
+1719	1934	7647754857367351	Code.exe	83f6c36841508de7
+9	414	7647760983819743	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.ddi	9539556aae2c9651
+414	487	7647760987871227	CMakeFiles/Code.dir/CXX.dd	8922acbb177f14c8
+414	487	7647760987871227	E:/OneDrive/OneDrive - De La Salle University - Manila/001 Year 4 Term 2/STDISCM/Problem Sets/Problem Set 2/Code/cmake-build-debug/CMakeFiles/Code.dir/CXXModules.json	8922acbb177f14c8
+414	487	7647760987871227	CMakeFiles/Code.dir/main.cpp.obj.modmap	8922acbb177f14c8
+414	487	7647760987871227	CMakeFiles/Code.dir/DungeonInstance.cpp.obj.modmap	8922acbb177f14c8
+414	487	7647760987871227	CMakeFiles/Code.dir/DungeonManager.cpp.obj.modmap	8922acbb177f14c8
+414	487	7647760987871227	CMakeFiles/Code.dir/ConsoleManager.cpp.obj.modmap	8922acbb177f14c8
+498	1995	7647760988718960	CMakeFiles/Code.dir/DungeonInstance.cpp.obj	a391b1d5013b08cd
+1996	2389	7647761003693194	Code.exe	83f6c36841508de7

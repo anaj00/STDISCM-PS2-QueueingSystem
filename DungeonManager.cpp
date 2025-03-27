@@ -4,6 +4,8 @@
 
 #include "DungeonManager.h"
 
+#include <algorithm>
+
 
 DungeonManager::DungeonManager() : instanceSemaphore(0) {
 }
@@ -19,41 +21,38 @@ void DungeonManager::queuePlayers()
 
 void DungeonManager::processQueue() {
     while (true) {
-        // Lock only for checking party availability
-        std::unique_lock<std::mutex> lock(queueMutex);
-        partyAvailable.wait(lock, [this]() {
+        std::unique_lock<std::mutex> queueLock(queueMutex);
+
+        // Wait for an available dungeon instance
+        instanceAvailable.wait(queueLock, [this]() {
+            for (DungeonInstance &instance : instances) {
+                if (!instance.isActive()) {
+                    return true;
+                }
+            }
+            return false;
+        });
+
+        // Wait for a party to be available
+        partyAvailable.wait(queueLock, [this]() {
             return (tankQueue.size() > 0 && healerQueue.size() > 0 && dpsQueue.size() >= 3);
         });
 
-        // Form party (still within lock)
+        // Form party only after both conditions are met
         tankQueue.pop();
         healerQueue.pop();
         dpsQueue.pop();
         dpsQueue.pop();
         dpsQueue.pop();
 
-        lock.unlock(); // Unlock queue mutex as soon as party is formed.
-
-        // Lock for instance availability check
-        std::unique_lock<std::mutex> instanceLock(queueMutex);
-        // Recheck instance availability in a loop
-        while (true) {
-            bool instanceFound = false;
-            for (DungeonInstance &instance : instances) {
-                if (!instance.isActive()) {
-                    instanceFound = true;
-                    break;
-                }
-            }
-            if (instanceFound) break; //exit inner while loop.
-            instanceAvailable.wait(instanceLock);
-        }
-        //assign instance.
+        // Assign party to an available dungeon instance
         for (DungeonInstance &instance : instances) {
             if (!instance.isActive()) {
                 instance.setActive(true);
-                instanceLock.unlock();
+                queueLock.unlock(); // Unlock before launching the dungeon
+
                 instanceThreads.emplace_back(&DungeonInstance::start, &instance, t1, t2);
+
                 break;
             }
         }
