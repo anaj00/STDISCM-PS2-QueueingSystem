@@ -89,6 +89,11 @@ void DungeonManager::displaySummary() {
         totalParties += instance.getPartiesServed();
     }
 
+    std::cout << "\n=== Queue Summary ===\n";
+    std::cout << "Remaining tanks: " << tankQueue.size() << std::endl;
+    std::cout << "Remaining healers: " << healerQueue.size() << std::endl;
+    std::cout << "Remaining DPS: " << dpsQueue.size() << std::endl;
+
     std::cout << "\n=== Dungeon Summary ===\n";
     for (auto &instance : instances) {
         std::cout << "[Dungeon " << instance.getPartiesServed()
@@ -100,23 +105,17 @@ void DungeonManager::displaySummary() {
 void DungeonManager::displayInitialization()
 {
     std::cout << "\n=== Initialization ===\n";
-    std::cout << "Enter max concurrent dungeon instances: ";
-    std::cin >> maxInstance;
-    std::cout << "Enter number of tanks in queue: ";
-    std::cin >> tanks;
-    std::cout << "Enter number of healers in queue: ";
-    std::cin >> healers;
-    std::cout << "Enter number of DPS in queue: ";
-    std::cin >> dps;
-    std::cout << "Enter min dungeon time (t1): ";
-    std::cin >> t1;
-    std::cout << "Enter max dungeon time (t2): ";
-    std::cin >> t2;
+    maxInstance = getValidInput("Enter max concurrent dungeon instances: ");
+    tanks = getValidInput("Enter number of tanks in queue: ");
+    healers = getValidInput("Enter number of healers in queue: ");
+    dps = getValidInput("Enter number of DPS in queue: ");
+    t1 = getValidInput("Enter min dungeon time (t1): ");
+    t2 = getValidInput("Enter max dungeon time (t2): ");
 
     instanceSemaphore.release(maxInstance);
 
     for (int i = 0; i < maxInstance; i++) {
-        instances.emplace_back(i + 1, this); // Pass 'this'
+        instances.emplace_back(i + 1, this);
     }
 
     displaySettings();
