@@ -108,8 +108,14 @@ void DungeonManager::displayInitialization()
     tanks = getValidInput("Enter number of tanks in queue: ");
     healers = getValidInput("Enter number of healers in queue: ");
     dps = getValidInput("Enter number of DPS in queue: ");
-    t1 = getValidInput("Enter min dungeon time (t1): ");
-    t2 = getValidInput("Enter max dungeon time (t2): ");
+
+    do {
+        t1 = getValidInput("Enter min dungeon time (t1): ");
+        t2 = getValidInput("Enter max dungeon time (t2): ");
+        if (t1 > t2) {
+            std::cout << "Error: Min dungeon time (t1) should not be greater than max dungeon time (t2). Please enter again.\n";
+        }
+    } while (t1 > t2);
 
     instanceSemaphore.release(maxInstance);
 
